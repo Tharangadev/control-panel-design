@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- resources -->
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <script src="jquery/dist/jquery.js"></script>
+    <script src="des/js.js"></script>
+    <script src="chart.js"></script>
+    <script src="chart_functions.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="des/style.css">
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="main">
+            <div class="menu col-xs-2">
+                <nav>
+                    <div class="the_admin">
+                        <div class="avatar">
+                            <img src="128.jpg" alt="">
+                            <div class="status"></div>
+                        </div>
+                        <div class="admin_name">
+                          Adelle Charles
+                        </div>
+                        <div class="admin_status">
+                            Visual Designer
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="selected"><a href=""><i class="fa  fa-home"></i><span class="icon_title">Dash board</span></a></li>
+                        <li><a href=""><i class="fa fa-area-chart"></i><span class="icon_title">Reports</span></a></li>
+                        <li><a href=""><i class="fa fa-user"></i><span class="icon_title">Management</span></a></li>
+                        <li><a href=""><i class="fa fa-bell-o"></i><span class="icon_title">Alerts</span></a></li>
+                        <li><a href=""><i class="fa fa-gear"></i><span class="icon_title">Settings</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="details col-xs-10">
+                <div class="dash_board">
+                    <div class="dash_news_items">
+                        <div class="col-lg-3 col-sm-12 dash_news important">
+                        	 <div class="dash_padding">
+                           	<i class="fa fa-2x fa-dollar"></i>
+                        	<h5>
+                        		<span>45000</span>Transacions
+                        	</h5>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 dash_news semi_important">
+                            <div class="dash_padding">
+                           	<i class="fa fa-2x fa-truck"></i>
+                        	<h5>
+                        		<span>3200</span>Deliveries
+                        	</h5>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 dash_news normal">
+                           <div class="dash_padding">
+                           	<i class="fa fa-2x fa-envelope"></i>
+                        	<h5>
+                        		<span>200</span>Feedbacks
+                        	</h5>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 dash_news semi_important">
+                            <div class="dash_padding">
+                           	<i class="fa fa-2x fa-group"></i>
+                        	<h5>
+                        		<span>300</span>New users
+                        	</h5>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="time_line">
+                            <h5 class="details_widget_header">Time line</h5>
+                            <ul>
+                                <li>
+                                    <div class="point">
+                                        <div class="middle_ball important"></div>
+                                        <div class="middle_line important"></div>
+                                    </div>
+                                    <div class="time_line_event">
+                                        <div class="time_line_title">Making a appointment</div>
+                                        <div class="time_line_time">20 mins ago</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="point">
+                                        <div class="middle_ball normal"></div>
+                                        <div class="middle_line normal"></div>
+                                    </div>
+                                    <div class="time_line_event">
+                                        <div class="time_line_title">First task</div>
+                                        <div class="time_line_time">30 mins ago</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="point">
+                                        <div class="middle_ball semi_important"></div>
+                                        <div class="middle_line semi_important"></div>
+                                    </div>
+                                    <div class="time_line_event">
+                                        <div class="time_line_title">Order some works</div>
+                                        <div class="time_line_time">55mins ago</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="point">
+                                        <div class="middle_ball important"></div>
+                                        <div class="middle_line important"></div>
+                                    </div>
+                                    <div class="time_line_event">
+                                        <div class="time_line_title">Eat the lunch</div>
+                                        <div class="time_line_time">2 Hours ago</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="point">
+                                        <div class="middle_ball normal"></div>
+                                        <div class="middle_line normal"></div>
+                                    </div>
+                                    <div class="time_line_event">
+                                        <div class="time_line_title">Walk the Dog</div>
+                                        <div class="time_line_time">3 Hours Ago</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="point">
+                                        <div class="middle_ball important"></div>
+                                        <div class="middle_line important"></div>
+                                    </div>
+                                    <div class="time_line_event">
+                                        <div class="time_line_title">Some Other Works</div>
+                                        <div class="time_line_time">5 Hours ago</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-sm-12">
+                        <div class="sales">
+                            <h5 class="details_widget_header">Sales Comparison</h5>
+                            <ul class="sales_comparison">
+                                <li class="day day_1">
+                                    <div class="graph_line">
+                                        <div class="line normal">
+                                            <h5>
+                                    			32102
+                                    		</h5>
+                                        </div>
+                                    </div>
+                                    <div class="date">
+                                        25 th December
+                                    </div>
+                                </li>
+                                <li class="day day_2">
+                                    <div class="graph_line">
+                                        <div class="line important">
+                                            <h5>
+                                    			540000
+                                    		</h5>
+                                        </div>
+                                    </div>
+                                    <div class="date">
+                                        26 th December
+                                    </div>
+                                </li>
+                                <li class="day day_3">
+                                    <div class="graph_line">
+                                        <div class="line semi_important">
+                                            <h5>
+                                    			21000
+                                    		</h5>
+                                        </div>
+                                    </div>
+                                    <div class="date">
+                                        27 th December
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-sm-12">
+                        <div class="campaign">
+                            <h5 class="details_widget_header">Email Campaign</h5>
+                            <canvas id="email_canvas">
+                            </canvas>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-sm-12">
+                        <div class="campaign">
+                            <h5 class="details_widget_header">custermer support</h5>
+                            <ul>
+                                <li class="custermer_li">
+                                    <div class="user_avatar">
+                                    	<img src="faces/1.jpg" alt="">
+                                    </div>
+                                    <div class="user_name">
+                                        Katelyn Friedson
+                                        <span class="time">
+                       		 				10 mins ago
+                       		 			</span>
+                                    </div>
+                                    <div class="status important"></div>
+                                </li>
+                                                   <li class="custermer_li">
+                                    <div class="user_avatar"><img src="faces/2.jpg" alt=""></div>
+                                    <div class="user_name">
+                                    brynn evans
+                                        <span class="time">
+                       		 				10 mins ago
+                       		 			</span>
+                                    </div>
+                                    <div class="status semi_important"></div>
+                                </li>
+                                <li class="custermer_li">
+                                    <div class="user_avatar">
+                                    	<img src="faces/4.jpg" alt="">
+                                    </div>
+                                    <div class="user_name">
+                                       Jono Hunt
+                                        <span class="time">
+                       		 				10 mins ago
+                       		 			</span>
+                                    </div>
+                                    <div class="status semi_important"></div>
+                                </li>
+                                <li class="custermer_li">
+                                    <div class="user_avatar">
+                                    	<img src="faces/5.jpg" alt="">
+                                    </div>
+                                    <div class="user_name">
+                                        Guilty pleasure
+                                        <span class="time">
+                       		 				10 mins ago
+                       		 			</span>
+                                    </div>
+                                    <div class="status important"></div>
+                                </li>
+                                <li class="custermer_li">
+                                    <div class="user_avatar"><img src="faces/6.jpg" alt=""></div>
+                                    <div class="user_name">
+                                       Aaron Irizarry
+                                        <span class="time">
+                       		 				10 mins ago
+                       		 			</span>
+                                    </div>
+                                    <div class="status normal"></div>
+                                </li>
+                                <li class="custermer_li">
+                                    <div class="user_avatar">
+                                    	<img src="faces/7.jpg" alt="">
+                                    </div>
+                                    <div class="user_name">
+                                        Whale
+                                        <span class="time">
+                       		 				10 mins ago
+                       		 			</span>
+                                    </div>
+                                    <div class="status semi_important"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-sm-12">
+                        <div class="campaign">
+                            <h5 class="details_widget_header">Item Trending</h5>
+                            <canvas id="trending"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

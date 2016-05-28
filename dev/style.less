@@ -1,0 +1,301 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@important: #DE5B49;
+@semi_important: #E37B40;
+@normal: #46B29D;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #262932;
+    .main_container {
+        .main {
+            .menu {
+                padding-left: 0px;
+                color: #fff;
+                nav {
+                    position: fixed;
+                    height: 100vh;
+                    background: #3C414F;
+                    width: inherit;
+                    .the_admin {
+                        padding: 1em 0;
+                        .avatar {
+                            width: 4em;
+                            height: 4em;
+                            margin: 1em auto;
+                            position: relative;
+                            border-radius: 50%;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                border-radius: 50%;
+                            }
+                            .status {
+                                position: absolute;
+                                width: 1em;
+                                height: 1em;
+                                border-radius: 50%;
+                                background: #40FF40;
+                            }
+                        }
+                        .admin_name {
+                            text-align: center;
+                            font-weight: 800;
+                            font-size: 1.2em;
+                        }
+                        .admin_status {
+                            text-align: center;
+                            font-size: .8em;
+                        }
+                        .admin_staus {}
+                    }
+                    ul {
+                        margin: 0px;
+                        padding: 0px;
+                        width: 100%;
+                        li {
+                            padding: .5em 2em;
+                            list-style-type: none;
+                            border-top: 1px solid #3C414F;
+                            border-bottom: 1px solid #3C414F;
+                            a {
+                                color: #fff;
+                                text-decoration: none;
+                                i {
+                                    padding: .5em;
+                                }
+                                .icon_title {
+                                    padding: .5em;
+                                }
+                            }
+                            :hover {
+                                border-top: none;
+                                border-bottom: none;
+                            }
+                        }
+                        :hover {
+                            background: #21242D;
+                            border-top: 1px solid #111;
+                            border-bottom: 1px solid #111;
+                        }
+                        .selected {
+                            background: #21242D;
+                            border-top: 1px solid #111;
+                            border-bottom: 1px solid #111;
+                        }
+                    }
+                    :after {
+                        // display: block;
+                        // content: "";
+                        // clear: both;
+                    }
+                }
+            }
+            .details {
+                padding-top: 1em;
+                .details_widget_header {
+                    text-align: right;
+                    padding: .5em;
+                    background: rgb(92, 92, 92);
+                    margin: 0;
+                    border-top-right-radius: 3px;
+                    border-top-left-radius: 3px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    margin-top: 1em;
+                }
+                .dash_board {
+                    color: #fff;
+                    .dash_news_items {
+                        .dash_news {
+                            .dash_padding {
+                                margin: .5em;
+                                padding: 1em;
+                                i {
+                                    display: inline-block;
+                                }
+                                h5 {
+                                    display: inline-block;
+                                    span {
+                                        padding: 1em;
+                                        font-weight: 800;
+                                    }
+                                }
+                            }
+                        }
+                        .important {
+                            background: @important;
+                        }
+                        .semi_important {
+                            background: @semi_important;
+                        }
+                        .normal {
+                            background: @normal;
+                        }
+                    }
+                    .time_line {
+                        ul {
+                            margin: 0px;
+                            padding: 0px;
+                            li {
+                                list-style-type: none;
+                                height: 70px;
+                                .point {
+                                    display: inline-block;
+                                    float: left;
+                                    height: inherit;
+                                    padding: 0 1em;
+                                    position: relative;
+                                    .middle_line {
+                                        width: 5px;
+                                        background: red;
+                                        height: inherit;
+                                        margin: 0 5px;
+                                    }
+                                    .middle_ball {
+                                        height: 15px;
+                                        width: 15px;
+                                        background: none repeat scroll 0% 0% rgb(0, 128, 0);
+                                        border-radius: 50%;
+                                        position: absolute;
+                                        top: 35%;
+                                    }
+                                    .important {
+                                        background: @important;
+                                    }
+                                    .semi_important {
+                                        background: @semi_important;
+                                    }
+                                    .normal {
+                                        background: @normal;
+                                    }
+                                }
+                                .time_line_event {
+                                    display: inline-block;
+                                    padding: 1em;
+                                    .time_linre_title {}
+                                    .time_line_time {
+                                        font-size: 0.8em;
+                                    }
+                                }
+                                &:nth-child(odd) {
+                                    background: #21242D;
+                                }
+                                &:nth-child(even) {
+                                    background: #313540;
+                                }
+                            }
+                        }
+                    }
+                    .sales {
+                        .sales_comparison {
+                            margin: 0px;
+                            padding: 0px;
+                            .day {
+                                list-style-type: none;
+                                padding: 1em;
+                                .graph_line {
+                                    width: 60%;
+                                    display: inline-block;
+                                    float: left;
+                                    .line {
+                                        line-height: 20px;
+                                        padding: 5px;
+                                        h5 {
+                                            font-weight: 800;
+                                            color: #fff;
+                                            font-size: 10px;
+                                            padding: 0px;
+                                            margin: 0px;
+                                            text-align: right;
+                                        }
+                                    }
+                                    .important {
+                                        background: @important;
+                                        width: 80%;
+                                    }
+                                    .semi_important {
+                                        background: @semi_important;
+                                        width: 60%;
+                                    }
+                                    .normal {
+                                        background: @normal;
+                                        width: 40%;
+                                    }
+                                }
+                                .date {}
+                                &:nth-child(odd) {
+                                    background: #21242D;
+                                }
+                                &:nth-child(even) {
+                                    background: #313540;
+                                }
+                            }
+                        }
+                    }
+                    .campaign {
+                        ul {
+                            padding: 0px;
+                            margin: 0px;
+                            .custermer_li {
+                                padding: .5em;
+                                list-style-type: none;
+                                .user_avatar {
+                                    width: 3em;
+                                    height: 3em;
+                                    background: red;
+                                    margin: .5em;
+                                    border-radius: 50%;
+                                    float: left;
+                                    img {
+                                        width: 3em;
+                                        height: 3em;
+                                        border-radius: 50%;
+                                    }
+                                }
+                                .user_name {
+                                	width: 60%;
+                                    font-weight: 800;
+                                    float: left;
+                                    line-height: 2em;
+                                    padding: 1em;
+                                    font-size: 14px;
+                                    .time {
+                                        font-weight: normal;
+                                        font-size: 12px;
+                                    }
+                                }
+                                .status {
+                                    width: 1em;
+                                    height: 1em;
+                                    margin: 1.5em;
+                                    border-radius: 50%;
+                                    float: right;
+                                }
+                                .important {
+                                    background: @important;
+                                }
+                                .semi_important {
+                                    background: @semi_important;
+                                }
+                                .normal {
+                                    background: @normal;
+                                }
+                                &:nth-child(odd) {
+                                    background: #21242D;
+                                }
+                                &:nth-child(even) {
+                                    background: #313540;
+                                }
+                            }
+                            :after {
+                                display: block;
+                                content: "";
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
